@@ -36,12 +36,6 @@ CREATE TABLE IF NOT EXISTS `base_usuarios` (
   PRIMARY KEY (`nIdUsuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='tabla principal de usuarios, posterior a identificación en blockchain';
 
--- Volcando datos para la tabla iagrinet.base_usuarios: ~9 rows (aproximadamente)
-/*!40000 ALTER TABLE `base_usuarios` DISABLE KEYS */;
-INSERT INTO `base_usuarios` (`nIdUsuario`, `cDid`, `nTipo`, `cEmpresa`, `nTipoEmpresa`, `cRegistroIdentificador`, `cMarcaComercial`, `cEmail`, `bActivo`, `cUsuario_Registro`, `dFecha_Registro`, `cUsuario_UltimaModificacion`, `dFecha_UltimaModificacion`, `cUsuario_Eliminacion`, `dFecha_Eliminacion`) VALUES
-	(1, '0', 1, 'Empresa Desarrollo', 1, 'EMPR998954987', 'Desarrollo', 'empresasf@gmail.com', 1, 'SA', '2020-09-12 16:19:05', NULL, NULL, NULL, NULL);
-/*!40000 ALTER TABLE `base_usuarios` ENABLE KEYS */;
-
 -- Volcando estructura para tabla iagrinet.base_usuariosanexos
 CREATE TABLE IF NOT EXISTS `base_usuariosanexos` (
   `nIdUsuarioAnexo` int(11) NOT NULL AUTO_INCREMENT COMMENT 'llave',
