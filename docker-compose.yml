@@ -1,0 +1,16 @@
+version: '1'
+services:
+    db:
+        build: ./db
+        # Set max_allowed_packet to 256M (or any other value)
+        command: --max_allowed_packet=32505856
+        environment:
+            MYSQL_DATABASE: iagrinet
+            MYSQL_ROOT_PASSWORD: iSim2020
+            MYSQL_USER: mysql
+            MYSQL_PASSWORD: iSim2020
+            DATABASE_HOST: db
+        ports:
+            - "3309:3306"
+        volumes:
+            - ./mysql_data:/var/lib/mysql:z
